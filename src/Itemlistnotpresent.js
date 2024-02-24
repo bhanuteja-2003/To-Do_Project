@@ -2,7 +2,7 @@ import React from 'react'
 
 const Itemlistnotpresent = () => {
   return (
-    <p>Your list if empty</p>
+    <p>Your list is empty</p>
   )
 }
 

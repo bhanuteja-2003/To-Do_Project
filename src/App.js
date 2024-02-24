@@ -28,8 +28,6 @@ function App() {
   const [newItem, setNewItem] = useState("");
   // search state
   const [search, setSearch] = useState("");
-  // temp state :
-  const [counter,setCounter]  =useState(0);
   
   // setting up local storage :
   useEffect(() => {
@@ -99,11 +97,6 @@ function App() {
         handleDelete={handleDelete}
       />
       <Footer itemLen={items.length} />
-      <button onClick={()=>{
-        setCounter((prev)=>{
-            return prev+1;
-        })
-      }} >{counter}</button>
     </div>
   );
 }
